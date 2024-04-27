@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.sidebar{
+    background-color: rgb(1, 21, 29);
+    width:250px;
+    height: 100vh; 
+    position: fixed;
+    align-items: center;
+    color: white;
+    line-height: 50px;
+}
+
+.sidebar header{
+    font-size: 22px;
+    text-align: center;
+    line-height: 80px;
+    background-color: rgba(167, 165, 165, 0.541);
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+.sidebar.menu{
+    font-size: 25px;
+    align-items: center;
+    color: white;
+   
+}
+.icon{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.sidebar.list{
+    margin-top: 10px;
+    align-items: center;
+    
+}
+.icon{
+    list-style: none;
+    height: 100%;
+    width: 100%;
+   line-height: 50px;
+   box-sizing: border-box;
+   
+}
+ul{
+   
+    margin: 5px 0;
+    display: block;
+    line-height: 50px;
+    font-size: 18px;
+    color: white;
+    text-align:left;
+    line-height: 50px;
+    
+}
+.ion-icon{
+    min-width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+li:hover{
+    padding-left: 35px;
+    background-color: #fc0e6d;
+    box-shadow: 0 0 5pX #fc0e6d, 0 0 25pX #fc0e6d,
+    0 0 50pX #fc0e6d, 0 0 100pX #fc0e6d,0 0 200pX #fc0e6d;
+}
+
+
+
+
