@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    background-color: rgb(202, 202, 190);
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    
+}
+a{
+    display: flex;
+    background-color: ivory;
+    width:75px;
+    height: 75px;
+    margin: 0 15px;
+    border-radius: 9px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 6px 6px 10px -1px rgba(49, 49, 49, 0.705), -6px -6px 10px -1px rgba(255, 255, 255, 0.932);
+    transition: transform 0.5s;
+}
+a i{
+    font-size: 33px;
+    color: rgb(102, 102, 102);
+    transition: transform 0.5s ;
+
+}
+a:hover {
+    box-shadow:inset 2px 2px 4px 1px rgba(49, 49, 49, 0.664),inset 4px 4px 6px -1px rgba(255, 255, 255, 0.849);
+    border: 1px solid rgba(0,0,0,0.1);
+    transform: translateY(2px);
+}
+a:hover i{
+   transform:rotate(360deg);
+   transition: transform 0.9s ;
+   
+}
+a:hover .fa-whatsapp{
+     color:rgb(23, 253, 138);
+}
+a:hover .fa-linkedin{
+    color:rgb(18, 93, 253);
+}
+a:hover .fa-youtube{
+    color:rgb(245, 9, 9);
+}
+a:hover .fa-github{
+    color:rgb(190, 10, 190);
+}
+a:hover .fa-pinterest{
+    color:rgb(207, 0, 0);
+}
+a:hover .fa-facebook{
+    color:rgb(66, 126, 255);
+}
