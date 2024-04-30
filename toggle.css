@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    background: #212121;
+    display: flex;
+}
+.btn{
+    width:100px;
+    height:60px;
+    border: 2px solid rgb(255,0,0);  
+    mix-blend-mode: lighten;
+    transform-origin: left;
+    align-items: center;
+    display: flex;
+    border-radius: 45px;
+    margin-left: 600px;
+    margin-top: 300px;
+    cursor: pointer;
+}
+.check{
+    display: none;
+}
+input:checked +.btn{
+    border:2px solid cyan;
+    box-shadow: 0 0 5px rgba(245, 245, 245, 0.699), 0 0 25px whitesmoke,
+    0 0 50px whitesmoke, 0 0 100px whitesmoke,0 0 200px whitesmoke;
+}
+input:checked +.btn::before{
+    background-color: bisque;
+    transform:translateX(45px);   
+}
+.btn::before{
+    position: absolute;
+    content: '';
+    border: 2px solid bisque;
+    width: 50px;
+    height: 50px;
+    border-radius: 200px;
+    margin:2px;
+    transform: 0.2s;   
+}
+input{
+    display: none;
+}
