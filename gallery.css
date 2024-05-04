@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:linear-gradient(30deg,navy,rgb(43, 43, 136),lightblue);
+    margin: 20px auto;
+}
+.gallery{
+    columns: 4 250px;
+    gap: 15px;
+}
+.gallery img{
+    margin-bottom: 10px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+}
