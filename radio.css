@@ -1,0 +1,61 @@
+:root{
+    --fill:grey;
+}
+body{
+    background:#212121;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin-left: 600px;
+    margin-top: 200px;
+}
+.container{
+    align-items: center;
+    justify-content: center;
+}
+.option{
+    cursor: pointer;
+    position: relative;
+    font-size: 25px;
+    color: var(--fill);
+    letter-spacing: .5px;
+    display: inline-block;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 5px 5px 5px 60px;
+    margin-left: 600px;
+    transition: color .5s ease-in-out;
+}
+.option::before,.option::after{
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.option::before{
+    width: 25px;
+    height: 25px;
+    border: 5px solid var(--fill);
+    transition: border .2s ease-in-out;
+
+}
+:not(input:checked) +.option:hover{
+    --fill:white;
+}
+input:checked+.option{
+    --fill:lime;
+}
+input:checked+.option::after{
+    background:var(--fill);
+}
