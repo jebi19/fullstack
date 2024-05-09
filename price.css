@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    font-size: 20px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 700px;
+    background-image: linear-gradient(30deg,rgb(19, 92, 228),rgb(81, 224, 224),rgb(0, 255, 55));
+    padding: 25px;
+}
+.wrapper{
+    min-width: 1000px;
+    width: 100%;
+    display: flex;
+    margin:20px auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.wrapper .table{
+    background:#212121be;
+    width: calc(33% - 25px);
+    border-radius: 10px;
+    padding: 35px;
+}
+.table .pricesection{
+    display: flex;
+    justify-content: center;
+}
+.pricesection .price-area{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.price-area .innerarea{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%; 
+    color: white;
+    line-height: 120px;
+    text-align: center;
+    position: relative;
+}
+.price-area .innerarea .text{
+    font-size: 25px;
+    font-weight: 300;
+    position: absolute;
+    top: 15px;
+    left: 23px;
+}
+.price-area .innerarea .price{
+    font-size: 50px;
+    font-weight: 500;
+    position: absolute;
+    top: 10px;
+   left: 45px;
+}
+.table .package{
+    width: 100%;
+    height: 2px; 
+    margin: 40px 0;
+    position: relative;
+}
+.table .package::before{
+    position: absolute;
+    left: 50%;
+    color: whitesmoke;
+    top:50%;
+    font-weight: 500;
+    padding: 3px 15px;
+    background: none;
+    font-size: 25px;
+    transform: translate(-50%,-50%);
+
+}
+.table .features li{
+    margin-bottom: 15px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+}
+.features li .list{
+    font-size: 20px;
+    font-weight: 300;
+}
+.icon{
+    font-size:medium;
+    font-weight: 300;
+}
+.fa-check{
+    color: rgb(61, 226, 75);
+}
+.fa-times{
+    color: red;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.btn button{
+    width: 50%;
+    height: 50px;
+    font-weight: 400;
+    border: none;
+    background-color: transparent;
+    border-radius: 30px;
+    outline: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: whitesmoke;
+    transition: all 0.5s ease;
+}
+.basic .price-area,.basic.innerarea{
+    border: 4px dotted lime;
+}
+.basic .btn button{
+    border: 2px solid lime;
+}
+.basic .btn button:hover{
+    color: lime;
+    box-shadow: 0 0 5px lime, 0 0 25px lime,
+    0 0 50px lime, 0 0 100px lime,0 0 200px lime;
+}
+
+.standard .price-area,.standard.innerarea{
+    border:4px dotted cyan;
+
+}
+
+.standard .btn button{
+    border: 2px solid cyan;
+}
+.standard .btn button:hover{
+    color: cyan;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan,
+    0 0 50px cyan, 0 0 100px cyan ,0 0 200px cyan;
+}
+.premium .price-area,.premium.innerarea{
+    border:4px dotted yellow;
+
+}
+.premium .btn button{
+    border: 2px solid yellow;
+}
+.premium .btn button:hover{
+    color: yellow;
+    box-shadow: 0 0 5px yellow, 0 0 25px yellow,
+    0 0 50px yellow, 0 0 100px yellow,0 0 200px yellow;
+}
+.basic .package::before{
+    content: "Basic";
+    color: lime;
+}
+.standard .package::before{
+    content: "Standard";
+    color: cyan;
+}
+.premium .package::before{
+    content: "Premium";
+    color: yellow;
+}
+.table:hover{
+    transform: scale(1.1);
+}
