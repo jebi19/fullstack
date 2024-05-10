@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    min-height: 100vh;
+}
+label{
+    position: relative;
+    width: 75px;
+    height: 75px;
+    background: #212121;
+    border-radius: 15px;
+}
+input{
+    appearance: none;
+}
+span{
+    position: absolute;
+    cursor: pointer; 
+    top: 0;
+    left: 0;  
+    border-radius: 15px;
+    width: 74px;
+    height: 74px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: #333;
+    border: 5px solid #161616d5;
+}
+label span .fa-power-off{
+    color: rgba(245, 245, 245, 0.411);
+    font-size: 35px;
+    transition: 0.3s;
+}
+label input:checked ~span .fa-power-off{
+    color: rgba(255, 255, 255, 0.877);
+    filter: drop-shadow(0 0 5px whitesmoke) drop-shadow(0 0 10px whitesmoke) drop-shadow(0 0 15px whitesmoke);
+}
